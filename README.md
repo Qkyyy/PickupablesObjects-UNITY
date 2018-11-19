@@ -1,6 +1,4 @@
-Hey everyone. I made a simple system which allows an object to be picked up, throw it and drop it.
-It's very simple, I made just a basis so someone can expand it according to needs.
-Feel free to download the presentation scene and use the scipt in your project.
+Hey everyone. I made a simple system that allows an object to be picked up, dropped and be throwable. It's very simple basis which can be expanded to your particular needs. Feel free to download the project and use the script in your games!
 
 ![](presentation.gif)
 
