@@ -28,9 +28,9 @@ public class PickupableObject : MonoBehaviour {
     {
         if (Vector3.Distance(playerTransform.position, transform.position) < 2.2f)      //If player is close enough
         {
-            transform.SetParent(playerTransform);                                       //sets the parent of the object to be player
+            transform.SetParent(Camera.main.transform);                                       //sets the parent of the object to be player
             rb.isKinematic = true;                                                      //turns Kinematic on, so object will not interfere when picked up
-            transform.localPosition = new Vector3(0f, 0.2f, 1.2f);                      //sets local position in front of player, so it seems player is holding it
+            transform.localPosition = new Vector3(0f, 0f, 1.4f);                      //sets local position in front of player, so it seems player is holding it
             transform.localRotation = Quaternion.Euler(0, 0f, 0);                       //rotates the object
             pickedUp = true;                                                            //tell's that object was picked up
         }
