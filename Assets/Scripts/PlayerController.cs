@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
     float mouseUpDown = 0.0f;
     float mouseRangeUpDown = 90f;
 
+    public bool canLookAround = true;
+
     CharacterController characterController;
 
     private void Start()
@@ -38,12 +40,15 @@ public class PlayerController : MonoBehaviour {
 
     void HandleMouseLook()
     {
-        float mouseLeftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
-        transform.Rotate(0, mouseLeftRight, 0);
+        if (canLookAround == true)
+        {
+            float mouseLeftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
+            transform.Rotate(0, mouseLeftRight, 0);
 
-        mouseUpDown -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-        mouseUpDown = Mathf.Clamp(mouseUpDown, -mouseRangeUpDown, mouseRangeUpDown);
-        Camera.main.transform.localRotation = Quaternion.Euler(mouseUpDown, 0, 0);
+            mouseUpDown -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+            mouseUpDown = Mathf.Clamp(mouseUpDown, -mouseRangeUpDown, mouseRangeUpDown);
+            Camera.main.transform.localRotation = Quaternion.Euler(mouseUpDown, 0, 0);
+
+        }
     }
-
 }

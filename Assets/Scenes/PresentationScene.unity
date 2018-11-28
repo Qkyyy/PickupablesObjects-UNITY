@@ -1505,6 +1505,18 @@ Prefab:
       propertyPath: m_Name
       value: Cube (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4289875271265154, guid: 4a3f03e030a95d842ac796a552b5c07e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0237
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289875271265154, guid: 4a3f03e030a95d842ac796a552b5c07e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.307185
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289875271265154, guid: 4a3f03e030a95d842ac796a552b5c07e, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.259555
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a3f03e030a95d842ac796a552b5c07e, type: 2}
   m_IsPrefabAsset: 0
@@ -4373,6 +4385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 400
   mouseSensitivity: 1
+  canLookAround: 1
 --- !u!1 &1727492428
 GameObject:
   m_ObjectHideFlags: 0
